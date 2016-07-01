@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # A program for finding fasta files that contain single-copy orthologs
-# USAGE: python3 Parsing_orthogroups_TA.py --readFile SpeciesIDs.txt --input Alignments/ --output parsed_orthogroups/ --num integer
+# USAGE: python3 0_Parsing_orthogroups_TA.py --readFile SpeciesIDs.txt --input Alignments/ --output parsed_orthogroups/ --num integer
 # Author: Taruna Aggarwal
 # Email: ta2007@wildcats.unh.edu
 # Affiliation: University of New Hampshire, Durham, NH, USA
