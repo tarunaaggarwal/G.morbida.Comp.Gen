@@ -17,7 +17,7 @@ def runMACSE(files): #input_file, NT_output_file, AA_output_file):
     input_file = files[0]
     NT_output_file = files[1]
     AA_output_file = files[2]
-    MACSE_command = "java -jar /macse_v1.01b.jar "
+    MACSE_command = "java -jar /home/mcclintock/ta2007/bin/MACSE/macse_v1.01b.jar "
     MACSE_command += "-prog alignSequences "
     MACSE_command += "-seq {0} -out_NT {1} -out_AA {2}".format(input_file, NT_output_file, AA_output_file)
     #print(MACSE_command)
@@ -44,18 +44,18 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # Try to make output directories
-    try:
-        os.makedirs(args.align_NT_dir)
-        os.makedirs(args.align_AA_dir)
-    except FileExistsError as e:
-        print(e)
+#    try:
+#        os.makedirs(args.align_NT_dir)
+#        os.makedirs(args.align_AA_dir)
+#    except FileExistsError as e:
+#        print(e)
 
     # We set up how many threads we're going to use
-    threads = 6
-    try:
-        threads = cpu_count()
-    except:
-        pass
+    threads = 8
+#    try:
+#        threads = cpu_count()
+#    except:
+#        pass
 
     # We setup the pool, and map the iteration to the thread callback
     pool = Pool(processes=threads)
