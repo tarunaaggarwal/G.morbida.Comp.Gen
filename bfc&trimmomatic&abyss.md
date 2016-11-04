@@ -41,7 +41,7 @@ ILLUMINACLIP:/opt/Trimmomatic-0.32/adapters/TruSeq3-PE-2.fa:2:30:10 \
 LEADING:4 TRAILING:4 SLIDINGWINDOW:4:4 MINLEN:30
 ```
 
-### Assembly with Abyss (v. )
+### Assembly with Abyss (v1.9.0  )
 ```
 
 for k in 61 71 81 91; do
