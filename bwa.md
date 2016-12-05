@@ -1,27 +1,25 @@
-## BWA 
+### BWA 
 
-### A. Index the *G. putterillii* genome assembly
-
-```
-bwa index gp2-K55P4K91-scaffolds.fa 
+### Index the genome assembly
 
 ```
-
-### B. Map paired-end reads to the indexed genome
-
-```
-bwa mem gp2-K55P4K91-scaffolds.fa \
-gp2_R1.fastq gp2_R1.fastq > gp2.sam 
+bwa index assembly.fasta
 ```
 
-### C. Sort PE sam file
+### Map paired-end reads to the indexed genome
 
 ```
-samtools sort gp2.sam gp2.sorted
+bwa mem assembly.fasta \
+file_R1.fastq file_R2.fastq > file.sam 
 ```
 
-### D. Find mapping metrics
+### Sort PE sam file
+
 ```
-samtools flagstat gp2.sorted.bam
+samtools sort file.sam file.sorted
 ```
-### E. Repeat A-D for *G. flava*
+
+### Find mapping metrics
+```
+samtools flagstat file.sorted.bam
+```
