@@ -46,6 +46,6 @@ paBS = robjects.r('p.adjust(bs_p_pos, "BH", len)')
 # paM8 = robjects.r('p.adjust(m8_p_pos, "BH", len)')
 
 
-print 'Ajusted p-val for null vs. alt of orthogroup {} is {}'.format(sys.argv[1], paBS[0])
+print 'Ajusted p-val for null vs. alt of orthogroup {} is {}'.format(sys.argv[1][0:13], paBS[0])
 
 # print 'M7vM8_pajust-value {} {}'.format(sys.argv[1], paM8[0])

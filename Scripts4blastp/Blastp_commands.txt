@@ -1,4 +1,10 @@
-blastp -num_threads 12 -max_target_seqs 1 -db nr -query ../genomes4orthofinder4PAML/shortlist_pep/geos_morb_sig_seqs.pep -out gm5.paml42.func -outfmt "6 qseqid qlen sseqid sgi slen qstart qend sstart send evalue bitscore length pident mismatch gaps stitle" -negative_gilist sequence.gi.txt
+blastp \
+-num_threads 12 \
+-max_target_seqs 1 \
+-db nr \
+-query ../genomes4orthofinder4PAML/shortlist_pep/geos_morb_sig_seqs.pep \
+-out gm5.paml42.func \
+-outfmt "6 qseqid qlen sseqid sgi slen qstart qend sstart send evalue bitscore length pident mismatch gaps stitle" 
 
 qseqid		Query Seq-id
 qlen 		Query sequence length

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # A program for aligning CDSs of a orthogroup.
-# USAGE: ./runRAxML_TA.py
+# USAGE: ./runRAxML_TA.py --root INPUT_DIR
 # Author: Taruna Aggarwal
 # Affiliation: University of New Hampshire, Durham, NH, USA
 # Date: 01/27/2016
@@ -9,6 +9,7 @@
 import os
 import subprocess
 import argparse
+
 
 parser = argparse.ArgumentParser(description="This script runs RAxML for files in a directory.")
 parser.add_argument('--root', help="PATH to the directory containing clean files.", required=True)
@@ -20,7 +21,5 @@ def runRAxML(input_file, name):
     subprocess.call(raxmlHPC_command, shell=True)
 
 for currentFile in os.listdir(args.root):
-    if currentFile.endswith(".fasta"):
-        runRAxML(args.root + currentFile, currentFile[:-20])
-
-
+    if currentFile.endswith(".clean"):
+        runRAxML(args.root + currentFile, currentFile[:-6])
