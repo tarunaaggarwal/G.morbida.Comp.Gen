@@ -27,7 +27,7 @@ for file in os.listdir(args.input):
         for currentLine in working_file:
             currentLine = currentLine.rstrip()
             if currentLine.startswith(">"):
-                new_file.write("{0}_{1}\n".format((file[:-4]), counter))
+                new_file.write(">{0}_{1}\n".format((file[:-4]), counter))
                 counter += 1
             else:
                 new_file.write("{0}\n".format(currentLine))
