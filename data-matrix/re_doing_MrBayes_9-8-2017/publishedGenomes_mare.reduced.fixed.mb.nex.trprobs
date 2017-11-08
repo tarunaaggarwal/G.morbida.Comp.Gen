@@ -1,0 +1,31 @@
+#NEXUS
+[ID: 8581527018]
+[This file contains the trees that were found during the MCMC
+search, sorted by posterior probability. "p" indicates the
+posterior probability of the tree whereas "P" indicates the
+cumulative posterior probability.]
+
+begin trees;
+   translate
+    1 Acre_chry,
+    2 Botr_cine,
+    3 Cera_plat,
+    4 Chae_glob,
+    5 Cord_mili,
+    6 Esco_webe,
+    7 Eutl_lata,
+    8 Fusa_gram,
+    9 Fusa_sola,
+   10 Gros_clav,
+   11 Myro_inun,
+   12 Neur_cras,
+   13 Oidi_maiu,
+   14 Stan_gris,
+   15 Tric_rees,
+   16 Tric_vire,
+   17 Usti_vire,
+   18 geos_flav,
+   19 geos_morb,
+   20 geos_putt;
+   tree tree_1 [p = 1.000, P = 1.000] = [&W 1.000000] ((20,(19,18)),(14,((11,(((16,15),6),(17,5))),((9,8),(((10,(12,4)),(7,(13,2))),3)))),1);
+end;

@@ -1,0 +1,34 @@
+
+phylobayes version 4.1
+
+init seed : 497595
+
+Warning: only the topologies (.treelist) and the summary statistics (.trace) are saved
+to save the entire parameter configuration, use -s option
+
+data file : publishedGenomes_mare.reduced.fixed.mb.nex
+number of taxa : 20
+number of sites: 89999
+
+fast computation / high memory use 
+
+
+branch lengths ~ iid gamma of mean mu and variance epsilon*mu^2
+mu ~ exponential of mean 0.1
+epsilon ~ exponential of mean 1
+
+CAT model
+   Dirichlet process of equilibrium frequency profiles
+   flexible prior on profiles:
+   profile ~ iid from a Dirichlet of center pi0 and concentration delta
+   pi0 ~ uniform
+   delta ~ exponential of mean Nstate (=20 on amino-acid data, 4 on nucleotide data)
+
+relative exchange rates:
+uniform (Poisson or Felsenstein81 processes, Felsenstein 1981)
+
+rates ~ gamma of mean 1 and variance 1/alpha
+4 discrete categories (Yang 1994)
+alpha ~ exponential of mean 1
+
+

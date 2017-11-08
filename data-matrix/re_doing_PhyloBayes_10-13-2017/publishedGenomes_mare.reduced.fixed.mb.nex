@@ -342,12 +342,3 @@ geos_putt	---------------------MVNIPKTRNTYCKGKECRKHTQHKVTQYKAGKASLFAQGKRRYDRKQSG
 	charset OG0004043_trim_renamed = 89981 - 89999;	
 end;
 
-Begin mrbayes;
-
-Prset aamodelpr=mixed statefreqpr=fixed(empirical);
-Lset rates=gamma;
-Mcmc nruns=2 nchains=4 Temp=0.200000 swapfreq=1 nswaps=1 ngen=215000 samplefreq=100 savebrlens=yes printfreq=50;
-Mcmcdiagn=yes diagnfreq=1000 sumt relburnin=yes burninfrac=0.25 filename=451ap;
-contype=halfcompat
-
-End;
