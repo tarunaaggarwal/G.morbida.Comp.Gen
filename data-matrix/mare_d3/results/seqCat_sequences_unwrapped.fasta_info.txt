@@ -1,0 +1,26 @@
+MARE OUTPUT
+-----------
+
+Command:
+MARE partitions.txt seqCat_sequences_unwrapped.fasta -d 3 -m 
+
+original multiple sequence alignment
+------------------------------------
+information content of B     : 0.327
+matrix saturation            : 1
+nr of taxa                   : 20
+nr of partitions             : 1916
+
+Parameters
+----------
+weighting of inform. content : 3
+weighting of taxa            : 1
+number of evaluated quartets : 20000
+
+reduced multiple sequence alignment
+-----------------------------------
+information content of B'            : 0.496
+nr of taxa                           : 20
+nr of partitions                     : 663
+ratio of reduced and complete matrix : 0.346
+matrix saturation                    : 1
